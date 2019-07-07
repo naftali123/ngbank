@@ -1,0 +1,43 @@
+##spec
+## entities 
+
+### User
+User Properties:
+1. ID
+2. First name
+3. Last name
+4. Account List
+5. User name
+6. Password
+
+
+###Account
+Account Properties:
+1. ID
+2. Name
+3. Balance
+
+### Account action 
+Account action Properties:
+1. ID
+2. Account ID
+3. Type 'Input/Output'
+
+## Data Source
+
+We will save the data as local files in out repo's unde 'assets'.
+We will create a module that will enabke to sace eassly.
+At git push data will saved to the cloud (github).
+
+## App flow
+
+## Login page
+
+User inputs user and pass, 
+
+##register page
+
+New user Form
+
+##Account action Page
+Make account action form num
