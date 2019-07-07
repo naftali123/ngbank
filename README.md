@@ -1,72 +1,56 @@
-# Bank
+# NgBank
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.1.
+# SPEC
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-
-
-##spec
-## entities 
+## Entities
 
 ### User
+
 User Properties:
-1. ID
-2. First name
-3. Last name
-4. Account List
-5. User name
-6. Password
+* id
+* FirstName
+* LastName
+* AccountsList
+* UserName
+* Password
 
+### Account
 
-###Account
 Account Properties:
-1. ID
-2. Name
-3. Balance
+* id
+* Name
+* Balance
 
-### Account action 
-Account action Properties:
-1. ID
-2. Account ID
-3. Type 'Input/Output'
+### AccountAction
 
-## Data Source
+AccountAction Properties:
+* id
+* AccountId
+* Type `Input/Output/Loan`
+* Amount 
 
-We will save the data as local files in out repo's unde 'assets'.
-We will create a module that will enabke to sace eassly.
-At git push data will saved to the cloud (github).
 
-## App flow
+## DataSource
 
-## Login page
+We will save the data as local files in out repo's unde `assets`.  
+We will create a module that will enable to save easily.  
+At git push data will be saved to the could (github).  
 
-User inputs user and pass, 
+## App Flow
 
-##register page
+### Login Page
 
-New user Form
+User inputs user and pass, otherwise can't get into private area.  
 
-##Account action Page
-Make account action form num
+### Register Page
+
+New User Form
+
+### Summary Page
+
+List 30 last AccountAction in Account.  
+
+### AccountAction Page
+
+Make AccountAction from enum.  
+Dont forget to log.
