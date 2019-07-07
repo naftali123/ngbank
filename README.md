@@ -4,7 +4,7 @@
 
 ## Entities
 
-### User
+### Bank User
 
 User Properties:
 * id
