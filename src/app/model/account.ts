@@ -1,6 +1,6 @@
 export class Account {
     id:number
-    FirstName:string
-    LastName:string
-    
+    BankUserId:number
+    Name:string
+    Balance:number
 }

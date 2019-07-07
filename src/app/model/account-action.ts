@@ -1,11 +1,12 @@
-export enum AccountEnum {
-    Input = "input",
+export enum ActionEnum {
+    Input = "Input",
     Output = "Output",
     Loan = "Loan"
 }
 
 export class AccountAction {
-    id: number
-    AccountId: number
-    
+    id:number
+    AccountId:number
+    Type:ActionEnum
+    Amount:number
 }
