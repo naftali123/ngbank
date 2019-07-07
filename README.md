@@ -56,12 +56,14 @@ Make AccountAction from enum.
 Dont forget to log.
 
 
-
-
-
-clone repo - git clone reourl
-update form cloud - git pull
-push into cloud repo
-git add .
-git commit -m "comment"
-git push -u origin master
+# Git Actions
+* clone repo 
+    * `git clone <reourl>`  
+    * `dir`  
+    * `cd <dirname>`  
+    * `npm install`  
+* update form cloud - `git pull`  
+* push into cloud repo 
+    * `git add .`  
+    * `git commit -m "comment"`  
+    * `git push -u origin master`  
