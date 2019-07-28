@@ -20,7 +20,10 @@ export class AccountsService {
   loginToAccount(u:string, p:string):BankUser{
     return this.users.find(bu => bu.UserName == u && bu.Password == p)
   }
-  getAccountById(build:number):Account{
-    this.accounts.filter
+  getAccountsById(_BankUserId:number):Account[]{
+    return this.accounts.filter(acc => acc.BankUserId == _BankUserId)
+  }
+  getAccountActionByAccountId(_AccountId:number):AccountAction[]{
+    return this.actions.filter(acc => acc.AccountId == _AccountId)
   }
 }

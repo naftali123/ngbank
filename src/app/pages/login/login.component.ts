@@ -15,7 +15,7 @@ export class LoginComponent implements OnInit {
   password: string
   
   constructor(private db:AccountsService, private router:Router) { 
-    console.log(123)
+    console.log(123);
   }
 
   ngOnInit() {
@@ -24,7 +24,13 @@ export class LoginComponent implements OnInit {
   loginButton(userName:string,password:string):void{
     console.log(userName,password);
     let bu:BankUser = this.db.loginToAccount(userName, password)
-    if(bu)this.router.navigateByUrl('summary/' + bu.id)
-    else console.log('Invalid user name or password')
+    if(bu)
+    {
+      this.router.navigateByUrl('summary/' + bu.id);
+      
+    }
+    else {
+      console.log('Invalid user name or password');
+    }
   }
 }

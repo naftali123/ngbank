@@ -11,7 +11,7 @@ import { AccountsService } from 'src/app/services/accounts.service';
 export class SummaryComponent implements OnInit {
   _BankUserId:number
   accounts:Account[] = []
-  constructor(private route:ActivatedRoute, parivate db:AccountsService) { }
+  constructor(private route:ActivatedRoute, private db:AccountsService) { }
 
   ngOnInit() {
     this.route.params.subscribe(myparams => {
@@ -19,5 +19,8 @@ export class SummaryComponent implements OnInit {
       this.accounts = this.db.getAccountsById(this._BankUserId)
     })
   }
+  addAction(){
+    this._BankUserId
 
+  }
 }
